@@ -60,10 +60,10 @@ postDeclare: 本文代表个人观点，内容仅供参考。若有不恰当之�
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
   enable: false
-  githubID:
-  repo:
-  ClientID:
-  ClientSecret:
+  githubID: 6419514
+  repo: https://github.com/lijiarui/blog
+  ClientID: 6b95c0bbd207540bc232
+  ClientSecret: 78d5e37397020b4a31560a40ca9f67a1bc0c2b1d
   lazy: true
 
 ## Comments settings.You can choose only ONE to display.
