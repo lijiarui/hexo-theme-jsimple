@@ -29,9 +29,9 @@ siteBuildingTime: 01/20/2018
 menu:
   chatbot: chatbot
   presentation: presentation
-  thought: thought
   project: project
   技术随笔: tech
+  thought: thought
   读书笔记: reading
   
 # Left menu of single pages settings
