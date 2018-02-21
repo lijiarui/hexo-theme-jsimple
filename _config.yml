@@ -28,10 +28,10 @@ siteBuildingTime: 01/20/2018
 ## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
 menu:
   chatbot: chatbot
-  presentation: presentation
   project: project
-  技术随笔: tech
+  presentation: presentation
   thought: thought
+  技术: tech
   读书: reading
   
 # Left menu of single pages settings
