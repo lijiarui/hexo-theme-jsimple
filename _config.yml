@@ -37,9 +37,9 @@ menu:
 # Left menu of single pages settings
 ## Notice: faName is FontAwesome style name
 leftPagesMenu:
-- uri: help
-  title: 帮助
-  faName: fa-question-circle
+- uri: about
+  title: 关于本站
+  faName: fa-user
 
 
 # cover info config
