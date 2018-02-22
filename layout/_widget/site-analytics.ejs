@@ -1,4 +1,15 @@
-<% if (theme.tentcentAnalyticsId){ %>
+<!-- <% if (theme.tentcentAnalyticsId){ %> -->
 <!-- Tencent Analytics -->
-<script type="text/javascript" src="//tajs.qq.com/stats?sId=<%= theme.tentcentAnalyticsId %>" charset="UTF-8"></script>
-<% } %>
+<!-- <script type="text/javascript" src="//tajs.qq.com/stats?sId=<%= theme.tentcentAnalyticsId %>" charset="UTF-8"></script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114589636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114589636-1');
+</script>
+
+<!-- <% } %> -->
