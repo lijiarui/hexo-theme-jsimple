@@ -515,7 +515,7 @@ body {
     color:#555
 }
 .post-desc {
-    font-family: Hannotate SC;
+    /* font-family: Hannotate SC; */
 }
 .post-title:hover {
     color:#333
@@ -548,7 +548,7 @@ body {
     line-height:24px;
     margin:0;
     padding:0;
-    font-family: Hannotate SC;
+    /* font-family: Hannotate SC; */
 }
 .post-cover {
     float:right;
@@ -1474,7 +1474,7 @@ pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .j
 /* for local search */
 #local-search-input-tip {
     border-radius:16px;
-    font-family: Hannotate SC;
+    /* font-family: Hannotate SC; */
 }
 .local-search-pop-overlay {
     position: fixed;
