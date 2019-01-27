@@ -1,31 +1,123 @@
-# site name
-siteName: 李佳芮の博客
+
+# Site
+title: 李佳芮の博客
 shortName: 芮
+subtitle: 时间看得见
+keywords: 创业，技术，女性
+description: 一个现实的理想主义者，网址：https://lijiarui.github.io。
+author: 李佳芮(https://lijiarui.github.io)
+language:
+    - en
+    - zh-cn
 
+# URL （Notice the permalink. Variable timestamp in post.md was added from hexo lib source）
+##  Please see the scripts in patch dir for more details
+url: https://lijiarui.github.io
+root: /
+permalink: :category/:entitle-:timestamp.html
+permalink_defaults:
+  lang: en
 
-# full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
-fullHttps: false
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - README.md
+  - README.zhCN.md
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: true # Transform title into titlecase
+external_link: false # Open external links in new tab
+filename_case: 0s
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: true
+  tab_replace:
+
+# Local search
+search:s
+  path: search.json
+  field: all
+  content: true
+
+# Category alias
+default_category: chatbot
+category_map:
+  chatbot: chatbot
+  project: project
+  presentation: presentation
+  thought: thought
+  技术: tech
+  读书: reading
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+
+theme: hexo-theme-jsimple
+
+# Master information. At the other hand, the fields int post.md(author|avatar|authorLink|authorAbout|authorDesc）also have the same effects
+## The priority in article config is higher than theme when you configuring at the same time. This used for multiplayer creation 
+webmaster:
+  name: 李佳芮
+  avatar: /images/favicon.png
+  home: https://lijiarui.github.io
+  desc: 一个现实的理想主义者
+
+# Decide whether the 'Content-Security-Policy = upgrade-insecure-requests' will be add in head tag.
+csp_enable: false
+
+# Article sort mode: -1(newer first)，1(older first). home_article_shown means paging count
+home_page_sort: -1
+home_article_shown: 10
+
+# Article sticky top. You need to set top field to your post.md. The larger value of top the front the article.
+sticky_top:
+  enable: true
+
+# CSP Model, true means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
+csp_enable: false
 
 # favicon
 favicon: /images/favicon.png
 # unique avatar
-avatarShow: false
-avatarImage: /images/favicon.png
+avatar_show: false
+avatar_image: /images/favicon.png
 
 # Home page sort type: -1: newer first，1: older first.
-homePageSortType: -1
-# Home page article shown number)
-homeArticleShown: 10
+home_page_sort: -1
+# Home page article shown number
+home_article_shown: 10
 
+# Post sticky top support (you need to set top:number in post.md. )
+sticky_top:
+  enable: true
 
-# your site build time or domain buy time
-siteBuildingTime: 01/20/2018
-
-
-# Top navigate menu name
-## Notice:
-## Name order decide show index.The name also called category alias,so you must set category alias before start server.
-## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
+# Article category navigation 
 menu:
   chatbot: chatbot
   project: project
@@ -34,13 +126,38 @@ menu:
   技术: tech
   读书: reading
   
-# Left menu of single pages settings
-## Notice: faName is FontAwesome style name
-leftPagesMenu:
+# Left navigation link. The faName is in FontAwesome styles.
+left_nav_menus:
 - uri: about
   title: 关于本站
   faName: fa-user
 
+# Google AdSense. Support auto-ads and manual-unit
+adsense:
+  enable: false// manual-unit-ads
+  auto: false// auto-ads
+  client_id:
+  archive_id:
+  tags_id:    
+  post_left_id:
+  post_right_id:
+  post_bottom_id:
+
+# Only support Disqus and Gitment so far.
+comments:
+  enable: true
+  disqus_shortname: lijiarui
+  gitment:
+    repo:
+    githubID:
+    ClientID:
+    ClientSecret:
+    lazy: true
+
+# Done as README said
+
+# your site build time or domain buy time
+site_building_time: 01/20/2018
 
 # cover info config
 coverTitle: 时间看得见
@@ -49,26 +166,29 @@ coverDescription: 一个现实的理想主义者
 # sns url
 sns:
   weibo: https://weibo.com/u/2175505900?refer_flag=1001030101_
-  weixin: http://blog.botorange.com
+  weixin: http://lijiarui.github.io
   github: https://github.com/lijiarui
   telegram: https://www.jianshu.com/u/ac5aaa7ad293
 
-# your article copyright or content declare
-postDeclare: 本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！
+# article declare. default content in languages
+post_declare: true
 
-# Gitment
-# Introduction: https://imsun.net/posts/gitment-introduction/
-gitment:
-  enable: false
-  githubID: 6419514
-  repo: https://github.com/lijiarui/lijiarui.github.io
-  ClientID: 6b95c0bbd207540bc232
-  ClientSecret: 78d5e37397020b4a31560a40ca9f67a1bc0c2b1d
-  lazy: true
+# Local search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # unescape html strings to the readable one
+  unescape: false
 
-## Comments settings.You can choose only ONE to display.
-# disqus shortName,
-disqus_shortname: lijiarui
+## Analytics setting. Google default
+analytics:
+  enable: true
+  google_analytics_id: UA-114589636-1
 
-# Analytics
-tentcentAnalyticsId: 65330142
+# Git-pages server info (Coding Pages|Github Pages)
+server_name: Github Pages
+server_url: https://github.com

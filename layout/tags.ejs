@@ -2,13 +2,13 @@
     <ul>
         <li><a href="/" data-name="<%= __('home') %>" title="Back Home"><%= __('home') %></a></li>
         <li><a href="/archives" data-name="<%= __('archives')  %>" title="<%= __('archives')  %>"><%= __('archives')  %></a></li>
-        <%- partial('_widget/search-bar', null, {cache: !config.relative_link}) %>
+        <%- partial('_widget/search-bar') %>
     </ul>
 </div>
 <div class="main-inner">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-header">
-            <h3 class="post-title">总的来说 - 目前共计<%= site.tags.length %>类标签</h3>
+            <h3 class="post-title"><%= __('tag_total_count', site.tags.length) %></h3>
         </div>
         <p>
             <% if (site.tags.length) { %>
@@ -31,4 +31,5 @@
             </ul>
         </div>
     </article>
-</div><!-- end #main-->
+    <%- partial('_widget/ads/adSense') %>
+</div>
