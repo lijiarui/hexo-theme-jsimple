@@ -4,15 +4,15 @@ site_name: 李佳芮の博客
 short_name: 芮
 subtitle: 时间看得见
 keywords: 创业，技术，女性
-description: 一个现实的理想主义者，网址：https://lijiarui.github.io。
-author: 李佳芮(https://lijiarui.github.io)
+description: 一个现实的理想主义者，网址：https://rui.juzi.bot。
+author: 李佳芮(https://rui.juzi.bot)
 language:
     - en
     - zh-cn
 
 # URL （Notice the permalink. Variable timestamp in post.md was added from hexo lib source）
 ##  Please see the scripts in patch dir for more details
-url: https://lijiarui.github.io
+url: https://rui.juzi.bot
 root: /
 permalink: :category/:entitle-:timestamp.html
 permalink_defaults:
@@ -75,7 +75,7 @@ theme: hexo-theme-jsimple
 webmaster:
   name: 李佳芮
   avatar: /images/favicon.png
-  home: https://lijiarui.github.io
+  home: https://rui.juzi.bot
   desc: 一个现实的理想主义者
 
 # Decide whether the 'Content-Security-Policy = upgrade-insecure-requests' will be add in head tag.
@@ -144,7 +144,7 @@ cover_description: 一个现实的理想主义者
 # sns url
 sns:
   weibo: https://weibo.com/u/2175505900?refer_flag=1001030101_
-  weixin: https://lijiarui.github.io
+  weixin: https://rui.juzi.bot
   github: https://github.com/lijiarui
   telegram: https://www.jianshu.com/u/ac5aaa7ad293
 
